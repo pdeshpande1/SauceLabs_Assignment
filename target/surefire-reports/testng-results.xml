@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="test.Login_TestCase" duration-ms="17069" started-at="2022-03-21T18:09:58 IST" finished-at="2022-03-21T18:10:15 IST">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="17069" started-at="2022-03-21T18:09:58 IST" finished-at="2022-03-21T18:10:15 IST">
+      <class name="test.Login_TestCase">
+        <test-method status="PASS" signature="DataSetup()[pri:0, instance:test.Login_TestCase@5a8806ef]" name="DataSetup" is-config="true" duration-ms="864" started-at="2022-03-21T18:09:58 IST" finished-at="2022-03-21T18:09:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DataSetup -->
+        <test-method status="PASS" signature="Launch_browser(java.lang.reflect.Method)[pri:0, instance:test.Login_TestCase@5a8806ef]" name="Launch_browser" is-config="true" duration-ms="6605" started-at="2022-03-21T18:09:59 IST" finished-at="2022-03-21T18:10:06 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test.Login_TestCase.Login_Pass()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Launch_browser -->
+        <test-method status="PASS" signature="Login_Pass()[pri:0, instance:test.Login_TestCase@5a8806ef]" name="Login_Pass" duration-ms="821" started-at="2022-03-21T18:10:06 IST" finished-at="2022-03-21T18:10:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_Pass -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:test.Login_TestCase@5a8806ef]" name="TearDown" is-config="true" duration-ms="228" started-at="2022-03-21T18:10:07 IST" finished-at="2022-03-21T18:10:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="Launch_browser(java.lang.reflect.Method)[pri:0, instance:test.Login_TestCase@5a8806ef]" name="Launch_browser" is-config="true" duration-ms="7296" started-at="2022-03-21T18:10:07 IST" finished-at="2022-03-21T18:10:14 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test.Login_TestCase.Login_failure()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Launch_browser -->
+        <test-method status="PASS" signature="Login_failure()[pri:0, instance:test.Login_TestCase@5a8806ef]" name="Login_failure" duration-ms="552" started-at="2022-03-21T18:10:14 IST" finished-at="2022-03-21T18:10:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_failure -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:test.Login_TestCase@5a8806ef]" name="TearDown" is-config="true" duration-ms="147" started-at="2022-03-21T18:10:15 IST" finished-at="2022-03-21T18:10:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="Stop_Process()[pri:0, instance:test.Login_TestCase@5a8806ef]" name="Stop_Process" is-config="true" duration-ms="509" started-at="2022-03-21T18:10:15 IST" finished-at="2022-03-21T18:10:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Stop_Process -->
+      </class> <!-- test.Login_TestCase -->
+    </test> <!-- Command line test -->
+  </suite> <!-- test.Login_TestCase -->
+</testng-results>

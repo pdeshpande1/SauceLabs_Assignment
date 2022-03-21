@@ -16,11 +16,18 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.ElementLocatorFactory;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+
 import test.Base_Class;
 
 public class Login_Page  {
 
-	WebDriver driver= Base_Class.driver;
+	//instead of creating driver instance object for this class, point driver object to Base class Webdriver class
+	WebDriver driver= Base_Class.driver; 
+	public  ExtentReports report= Base_Class.report;
+	public  ExtentTest test = Base_Class.test;
 	Login_Page login;
 	String username;
 	String pass;
@@ -38,12 +45,12 @@ public class Login_Page  {
 	@FindBy(xpath="//div[@class='error-message-container error']/h3")
 	public WebElement error_msg;
 	
-	@FindBy(xpath="//span[@class='title']")
-	public WebElement Login_pass_text;
+	
 	
 	public Login_Page()
 	{
 		PageFactory.initElements(driver, this);
+		
 	}
 	
 	
@@ -51,24 +58,11 @@ public class Login_Page  {
 	public void Login(String username1, String pass1)
 	{
 		user_name.sendKeys(username1);
+		test.log(LogStatus.PASS, "Enter username", "Username entered successfully");
 		password.sendKeys(pass1);
+		test.log(LogStatus.PASS, "Eneter password", "Password entered sucessfully");
 		login_click.click();
-		
+		test.log(LogStatus.PASS, "Click login button", "Login button clicked successfully");
 	}
 	
-	public void ScreenShot(String fileWithPath)
-	{
-		TakesScreenshot screenshot= ((TakesScreenshot) driver);
-		File file= screenshot.getScreenshotAs(OutputType.FILE);
-		
-		try
-		{
-			File DestFile=new File(fileWithPath);
-			FileHandler.copy(file, DestFile);	
-		}
-		catch (IOException e)
-		{
-			e.printStackTrace();
-		}
-	}
 }

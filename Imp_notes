@@ -1,0 +1,16 @@
+Page Object Model
+
+1) Finding web elements using By
+2) POM does not provide lazy initialization
+3) Page Object Model is a design pattern
+4) In POM, one needs to initialize every page object individually
+
+Page Factory
+
+1) Finding web elements using @FindBy
+2) Page Factory does provide lazy initialization
+3) PageFactory is a class that provides the implementation of the Page Object Model design pattern
+4) In PageFactory, all page objects are initialized by using the initElements() method
+
+##driver=new ChromeDriver();//driver object needs to  be instantiated always in BeforeMethod as after 1 test case, driver object gets quit or close. 
+This causes issue while executing 2nd test case as it never finds driver object in before method and NoSuchSessionException: Invalid Session Id is thrown. 

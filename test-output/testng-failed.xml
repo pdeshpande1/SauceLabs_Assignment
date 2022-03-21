@@ -2,11 +2,15 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <parameter name="Param2" value="xyz"/>
+    <parameter name="Param1" value="standard_user"/>
     <classes>
       <class name="test.Login_TestCase">
         <methods>
           <include name="Launch_browser"/>
           <include name="Login_Pass"/>
+          <include name="DataSetup"/>
+          <include name="Stop_Process"/>
           <include name="TearDown"/>
         </methods>
       </class> <!-- test.Login_TestCase -->

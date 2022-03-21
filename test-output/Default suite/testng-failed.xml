@@ -6,6 +6,9 @@
       <class name="test.Login_TestCase">
         <methods>
           <include name="Launch_browser"/>
+          <include name="DataSetup"/>
+          <include name="TearDown"/>
+          <include name="Stop_Process"/>
           <include name="Login_failure"/>
         </methods>
       </class> <!-- test.Login_TestCase -->
